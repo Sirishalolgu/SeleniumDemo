@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Salesforce]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.training.listerners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="login(failed)">
+    <classes>
+      <class name="com.training.tests.HomeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tc07validatesettings"/>
+          <include name="beforeMethod"/>
+          <include name="tc09logOut"/>
+        </methods>
+      </class> <!-- com.training.tests.HomeTest -->
+    </classes>
+  </test> <!-- login(failed) -->
+</suite> <!-- Failed suite [Salesforce] -->
